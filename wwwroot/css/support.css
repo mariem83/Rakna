@@ -1,0 +1,21 @@
+.sectionSupport{
+    margin-top: 80px;
+}
+@media (min-width: 992px){
+    .navBar1{
+        margin-left: 320px;
+    }
+    
+}
+@media (min-width: 576px){
+    .img1{
+        width: 500px;
+    }
+}
+
+
+@media (max-width: 575.98px){
+    .img1{
+        width: 400px;
+    }
+}

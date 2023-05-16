@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="icon" href="img/2222.png">
+    <title>Our App</title>
+
+    <style>
+      @@media (min-width: 992px){
+    .navBar1{
+        margin-left: 320px;
+    }
+}
+    @@media (min-width: 576px){
+    .img1{
+        width: 500px;
+    }
+}
+
+
+    @@media (max-width: 575.98px){
+    .img1{
+        width: 400px;
+    }
+}
+
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top opacity-75 " aria-label="Ninth navbar example">
+        <div class="container-xl">
+            <a asp-area="" asp-controller="Home" asp-action="index" class="navbar-brand">
+                <img class="img-fluid brand w-25" src="img/2222.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navBar1" id="navbarsExample07XL">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Support">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AboutUs">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <partial class="nav-link" name="_LoginPartial"/>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<section class="mt-5">
+    <div class="container d-lg-flex d-sm-block pt-5">
+        <div class="">
+            <img class="img1" src="img/Order ride-amico.png" alt="">
+        </div>
+        <div class="ms-2">
+            <p class="h2 mt-5">FIND PARKING NEAR YOU</p>
+            <p>The free Parking.com mobile app makes your on-the-go <br> parking experience that much simpler. Find the best parking <br> spot near your destination in convenient and safe parking <br> garages and lots across the United States.</p>
+            <p class="h4">How Our Parking App Works</p>
+            <p>When downloading the Parking.com app, search by entering an <br> address, landmark, or neighborhood to see available parking in <br> that area. When you reserve and pre-pay, you’ll guarantee your <br> parking spot. Plus, you can download mobile coupons directly <br> through the app for discounts at select parking locations.</p>
+            <p class="h4">Features of the Free Parking.com App:</p>
+            <p>
+                ✓ Compare rates <br>
+                ✓ Receive turn-by-turn directions to the garage or lot <br>
+                ✓ Send a text message to eligible locations so attendants know when you’ll be picking up your vehicle <br>
+                ✓ Receive in-app alerts <br>
+                ✓ In-app reminders help you never forget where you parked <br>
+                ✓ Bookmark for faster bookings <br>
+                ✓ Download coupons & pay in advance to park
+            </p>
+            <p>Don’t let parking in a city or at the airport be a hassle. Let our <br> app help you find parking when you need the perfect spot in <br> your neighborhood. With Parking.com, just park and go. Quick, <br> convenient, and at the tip of your finger to make life easier.</p>
+        </div>
+    </div>
+</section>
+
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container">
+    <p class="col-md-4 mb-0 text-muted">&copy; 2023 Company, Inc</p>
+
+    <a asp-area="" asp-controller="Home" asp-action="index" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <img class="w-50" src="img/Blue Simple Car Wash Logo (1).png" alt="">
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item">
+            <a asp-area="" asp-controller="Home" asp-action="index" class="nav-link px-2 text-muted">Home</a>
+        </li>
+        <li class="nav-item">
+            <a asp-area="" asp-controller="Home" asp-action="Pricing" class="nav-link px-2 text-muted">Pricing</a>
+        </li>
+        <li class="nav-item">
+            <a asp-area="" asp-controller="Home" asp-action="Support" class="nav-link px-2 text-muted">Support</a>
+        </li>
+        <li class="nav-item">
+            <a asp-area="" asp-controller="Home" asp-action="AboutUs" class="nav-link px-2 text-muted">About us</a>
+        </li>
+    </ul>
+</footer>
+
+
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

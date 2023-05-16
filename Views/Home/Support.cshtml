@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/support.css">
+    <link rel="icon" href="img/2222.png">
+
+    <title>Support</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top opacity-75 " aria-label="Ninth navbar example">
+        <div class="container-xl">
+            <a asp-area="" asp-controller="Home" asp-action="index" class="navbar-brand">
+                <img class="img-fluid brand w-25" src="img/2222.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navBar1" id="navbarsExample07XL">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ourApp">Our App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Support">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AboutUs">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <partial class="nav-link" name="_LoginPartial"/>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<section class="mt-5 text-center">
+    <div class="container d-lg-flex d-sm-block pt-5">
+        <div class="">
+            <img class="img1" src="img/Service 24_7-amico.png" alt="">
+        </div>
+        <div class="sectionSupport">
+            <p class="h1">WHAT CAN WE DO TO HELP?</p>
+            <p class="mt-3">We’ll gladly help to get you back on the road and into your <br> favorite spot.</p>
+
+            <a class="text-decoration-none text-white" asp-area="" asp-controller="Home" asp-action="SendMail">
+                <button class="btn btn-danger rounded-pill btn-lg mt-4 p-3">SEND OUR TEAM AN EMAIL</button>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="mt-5">
+
+    <div class="container">
+        <p class="h2">OUR FAQS.</p>
+
+
+        <div class="row mt-5">
+
+            <div class="col-lg-4">
+                <p class="border border-light p-2">GENERAL FAQS</p>
+
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo8">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo8" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                What are your parking options?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo8" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                Daily, monthly, and special event parking are offered at many of our locations.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                Do you offer reserved parking?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                Reserved parking is offered for select locations. Available options vary by location, but can include reservations for hourly, all-day, or special event parking.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                Do you offer discounted parking?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                Discount coupons are offered for select locations. Simply choose your parking location and select “View Details” to see if a discount coupon is available.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-2">
+                <p class="border border-light p-2">DESKTOP FAQS</p>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree1" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                Where is my pre-purchase parking pass?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree1" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                Your parking pass will be emailed to you.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 mt-2">
+                <p class="border border-light p-2">MOBILE APP FAQS</p>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo9">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo9" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            How do I download or review the mobile app?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo9" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            You can download or review our mobile app from the <a href="">Apple Store</a> or <a href="">Google Play</a>.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree5" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                When do redeemed coupons expire?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                Redeemed coupons only last 10 minutes.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container">
+    <p class="col-md-4 mb-0 text-muted">&copy; 2023 Company, Inc</p>
+
+    <a asp-area="" asp-controller="Home" asp-action="index" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <img class="w-50" src="img/Blue Simple Car Wash Logo (1).png" alt="">
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item">
+            <a asp-area="" asp-controller="Home" asp-action="index" class="nav-link px-2 text-muted">Home</a>
+        </li>
+        <li class="nav-item">
+            <a asp-area="" asp-controller="Home" asp-action="ourApp" class="nav-link px-2 text-muted">Our App</a>
+        </li>
+        <li class="nav-item">
+            <a asp-area="" asp-controller="Home" asp-action="Pricing" class="nav-link px-2 text-muted">Pricing</a>
+        </li>
+        <li class="nav-item">
+            <a asp-area="" asp-controller="Home" asp-action="Support" class="nav-link px-2 text-muted">Support</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">About us</a>
+        </li>
+    </ul>
+</footer>
+
+
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="icon" href="img/2222.png">
+    <title>About us</title>
+    <style>
+      @@media (min-width: 992px){
+    .navBar1{
+        margin-left: 320px;
+    }  
+    }
+    @@media (min-width: 576px){
+    .img1{
+        width: 500px;
+    }
+}
+
+
+@@media (max-width: 575.98px){
+    .img1{
+        width: 350px;
+    }
+}
+
+    </style>
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top opacity-75 " aria-label="Ninth navbar example">
+        <div class="container-xl">
+            <a asp-area="" asp-controller="Home" asp-action="index" class="navbar-brand">
+                <img class="img-fluid brand w-25" src="img/2222.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navBar1" id="navbarsExample07XL">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ourApp">Our App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Support">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <partial class="nav-link" name="_LoginPartial"/>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<div style="margin-top: 100px;" class="container ">
+    <h1 class="text-center">About us</h1>
+
+    <div class="d-lg-flex d-sm-block p-2">
+        <div class="">
+            <img class="img1" src="img/Parking-amico.png" alt="">
+        </div>
+        <div class="mt-5 fs-5 text-lg-start text-sm-center">
+            <p>
+                SP+ facilitates the efficient movement of people, vehicles and personal belongings with the goal of enhancing the consumer experience while improving bottom line results for our clients. The Company provides professional parking management, ground transportation, remote baggage check-in and handling, facility maintenance, security, event logistics, and other technology-driven mobility solutions to aviation, commercial, hospitality, healthcare and government clients across Egypt
+
+                Our commitment to Innovation in Operation® has made us an industry leader in delivering advanced capabilities to support our clients’ expanding performance and financial needs. Not only can we provide > exceptional market-based expertise in each of our service lines, we utilize the latest in advanced technologies and marketing strategies, and have taken new innovative approaches supporting revenue management to maximize the performance of our clients’ businesses.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container">
+    <p class="col-md-4 mb-0 text-muted">&copy; 2023 Company, Inc</p>
+
+    <a asp-area="" asp-controller="Home" asp-action="index" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <img class="w-50" src="img/Blue Simple Car Wash Logo (1).png" alt="">
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item">
+            <a asp-area="" asp-controller="Home" asp-action="index" class="nav-link px-2 text-muted">Home</a>
+        </li>
+        <li class="nav-item">
+            <a asp-area="" asp-controller="Home" asp-action="ourApp" class="nav-link px-2 text-muted">Our App</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link px-2 text-muted" asp-area="" asp-controller="Home" asp-action="Pricing">Pricing</a>
+        </li>
+        <li class="nav-item">
+            <a asp-area="" asp-controller="Home" asp-action="Support" class="nav-link px-2 text-muted">Support</a>
+        </li>
+    </ul>
+</footer>
+
+<script src="js/bootstrap.bundle.js"></script>
+
+</body>
+</html>

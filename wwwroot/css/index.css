@@ -1,0 +1,21 @@
+
+header{
+    background-image: url('../img/Black\ Red\ Modern\ Elegant\ Custom\ Motorcycle\ Garage\ Presentation.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 661px;
+    width: 100%;
+}
+
+.textHead{
+    padding-top: 200px;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (min-width: 992px){
+    .navBar1{
+        margin-left: 320px;
+    }
+}

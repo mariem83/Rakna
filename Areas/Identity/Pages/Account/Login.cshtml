@@ -1,0 +1,92 @@
+﻿@page
+@model LoginModel
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <link rel="stylesheet" href="~/css/signin.css">
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="icon" href="~/img/2222.png">
+    <title>Signin Template</title>
+
+</head>
+
+
+<body class="bg-light">
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top opacity-75 " aria-label="Ninth navbar example">
+        <div class="container-xl">
+            <a asp-area="" asp-controller="Home" asp-action="index" class="navbar-brand">
+                <img class="img-fluid brand w-25" src="~/img/2222.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navBar1" id="navbarsExample07XL">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ourApp">Our App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Support">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AboutUs">About us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <partial class="nav-link" name="_LoginPartial"/>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<main class="form-signin text-center">
+    <form id="account" method="post">
+        <img class="" src="~/img/Blue Simple Car Wash Logo (1).png" alt="" width="200" height="200">
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+        <div class="form-floating mb-3">
+            <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com"/>
+            <label asp-for="Input.Email" class="form-label">Email</label>
+            <span asp-validation-for="Input.Email" class="text-danger"></span>
+        </div>
+        <div class="form-floating mb-3">
+            <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password"/>
+            <label asp-for="Input.Password" class="form-label">Password</label>
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+        </div>
+        <div>
+            <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+        </div>
+        <div>
+            <p>
+                <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+            </p>
+        </div>
+    </form>
+</main>
+
+
+<script src="js/bootstrap.bundle.js"></script>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+</body>
+</html>
+
